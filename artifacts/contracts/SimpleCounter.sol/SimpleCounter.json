@@ -1,0 +1,101 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SimpleCounter",
+  "sourceName": "contracts/SimpleCounter.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "msgSender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newCounterValue",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "IncrementCounter",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "timeStamp",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "PriceUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "counter",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "increment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "price",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_price",
+          "type": "uint256"
+        }
+      ],
+      "name": "updatePrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061019d806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806361bc221a146100515780638d6cc56d1461006c578063a035b1fe14610081578063d09de08a1461008a575b600080fd5b61005a60005481565b60405190815260200160405180910390f35b61007f61007a366004610127565b610092565b005b61005a60015481565b61007f6100cf565b600181905560405181815242907f945c1c4e99aa89f648fbfe3df471b916f719e16d960fcec0737d4d56bd6968389060200160405180910390a250565b6000805490806100de83610140565b90915550506000546040805133815260208101929092524282820152517f04125654de600237c57852895f8a3e030f839e01c2db98f430af4a7ccc37f9b89181900360600190a1565b60006020828403121561013957600080fd5b5035919050565b60006001820161016057634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212202724b1a262e186ff6cfcc9c10fa818306e1b9e37b905c3f5e7d5f19d1dfe916764736f6c63430008170033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806361bc221a146100515780638d6cc56d1461006c578063a035b1fe14610081578063d09de08a1461008a575b600080fd5b61005a60005481565b60405190815260200160405180910390f35b61007f61007a366004610127565b610092565b005b61005a60015481565b61007f6100cf565b600181905560405181815242907f945c1c4e99aa89f648fbfe3df471b916f719e16d960fcec0737d4d56bd6968389060200160405180910390a250565b6000805490806100de83610140565b90915550506000546040805133815260208101929092524282820152517f04125654de600237c57852895f8a3e030f839e01c2db98f430af4a7ccc37f9b89181900360600190a1565b60006020828403121561013957600080fd5b5035919050565b60006001820161016057634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212202724b1a262e186ff6cfcc9c10fa818306e1b9e37b905c3f5e7d5f19d1dfe916764736f6c63430008170033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
